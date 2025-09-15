@@ -16,7 +16,7 @@ function del(origin, value) {
   return origin;
 }
 
-export default {
+export const Bitwise = {
   has,
   add,
   del,

@@ -1,0 +1,1 @@
+export { Bitwise } from "./src/bitwise.mjs";
