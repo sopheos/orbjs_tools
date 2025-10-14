@@ -1,12 +1,18 @@
 {
   "name": "@sopheos/orbjs_tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Various JS helpers",
-  "exports": "./index.mjs",
+  "exports": "./dist/index.mjs",
   "type": "module",
   "engines": {
     "node": ">=18"
   },
+  "scripts": {
+    "build": "(bash -c \"rm -r ./dist\" && npx tsc) || npx tsc"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sopheos/orbjs_tools.git"
@@ -16,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/sopheos/orbjs_tools/issues"
   },
-  "homepage": "https://github.com/sopheos/orbjs_tools#readme"
+  "homepage": "https://github.com/sopheos/orbjs_tools#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
