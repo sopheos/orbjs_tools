@@ -1,18 +1,16 @@
 {
   "name": "@sopheos/orbjs_tools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Various JS helpers",
-  "exports": "./dist/index.mjs",
+  "exports": "./index.mjs",
+  "types": "./index.d.mts",
   "type": "module",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "(bash -c \"rm -r ./dist\" && npx tsc) || npx tsc"
+    "build": "(bash -c \"find . -type f -name '*.d.mts' -delete\" && npx tsc) || npx tsc"
   },
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sopheos/orbjs_tools.git"
